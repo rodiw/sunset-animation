@@ -1,6 +1,7 @@
 body {
     margin: 0 0 0 0;
     background-color: #2c3e50;
+    animation: sky-animation 7s linear 0s infinite;
 }
   
 .grass {
@@ -15,6 +16,46 @@ body {
     width: 200px;
     height: 200px;
     border-radius: 50%;
+    animation: sun-animation 5s linear 0s infinite;
 }
 
 
+@keyframes sky-animation {
+    0% {
+        background-color: #2c3e50;
+    }
+    10% {
+        background-color: pink;
+    }
+    30% {
+        background-color: skyblue;
+    }
+    70% {
+        background-color: #2c3e50;
+    }
+    90% {
+        background-color: pink;
+    }
+    100% {
+        background-color: #2c3e50;
+    }
+}
+
+@keyframes sun-animation {
+    0% {
+        background: #f1870f;
+    }
+    25% {
+        background: #f1c40f;
+    }
+    50% {
+        background: #f1c40f;
+    }
+    75% {
+        background: #f1c40f;
+    }
+    100% {
+
+        background: #f13c0f;
+    }
+}
